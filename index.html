@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emily AI — Call Launcher</title>
+  <title>Romea.AI — Call Launcher</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -88,6 +88,30 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
     }
+
+    /* ── Instructions ── */
+    .instructions {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 24px;
+    }
+    .instructions-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .instructions ol {
+      padding-left: 18px;
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .instructions ol strong { color: rgba(255,255,255,0.75); }
 
     /* ── Presets ── */
     .presets-label {
@@ -244,13 +268,23 @@
 <header>
   <div class="logo-badge">
     <span class="logo-dot"></span>
-    Appreciation Financial · Emily AI
+    Romea.AI · Call Launcher
   </div>
   <h1>Call Launcher</h1>
-  <p class="subtitle">Trigger an outbound VAPI call with custom lead variables</p>
+  <p class="subtitle">Trigger an outbound call with custom lead variables</p>
 </header>
 
 <div class="card">
+
+  <!-- Instructions -->
+  <div class="instructions">
+    <p class="instructions-title">How to use</p>
+    <ol>
+      <li>Select a preset or fill in the fields manually.</li>
+      <li>Enter the lead's phone number, name, state, years of service, and GHL Contact ID.</li>
+      <li>Click <strong>Initiate Call</strong> — the AI will dial the number immediately.</li>
+    </ol>
+  </div>
 
   <!-- Presets -->
   <p class="presets-label">Quick presets</p>
